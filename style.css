@@ -512,7 +512,7 @@ span{
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
     #nav {
         width: 100vw;
@@ -745,13 +745,20 @@ span{
         display: none;
     }
 
-    #navbar ul {
-        display: none;
+    .hamburger {
+        display: block;
+        font-size: 8vw;
+        color: #D99425;
+        cursor: pointer;
+        z-index: 1001;
+        margin-left: auto;
+        margin-right: 7vw;
+        margin-top: 2vw;
     }
 
-    #navbar ul.show {
-        display: flex;
-        flex-direction: column;
+    #navbar ul {
+        display: none;
+        margin: 0;
     }
 
     #mobilemenu:checked ~ #navbar ul {
@@ -768,26 +775,7 @@ span{
         text-align: center;
         box-shadow: 0 2px 5px #D99425;
     }
-
-    .hamburger {
-        display: block;
-        font-size: 8vw;
-        color: #D99425;
-        cursor: pointer;
-        z-index: 1001;
-        margin-left: auto;
-        margin-right: 7vw;
-        margin-top: 2vw;
-    }
-}
-
-    /* #navbar ul {
-        gap: 4vw;
-        margin-left: 15vw;
-        margin-top: 5vw;
-        font-size: 3vw;
-    } */
-
+    
     #body1 {
         height: 100vw;
         padding-top: 20vw;
@@ -889,8 +877,6 @@ span{
         margin-top: 2vw;
     }
 
-
-    /* SPECIALS */
     #specials {
         margin-top: 15vw;
         scroll-margin-top: 18vw;
@@ -946,8 +932,6 @@ span{
         height: 65vw;
     }
 
-
-    /* FOOTER */
     #foot {
         margin-top: 15vw;
         height: auto;
@@ -994,3 +978,4 @@ span{
         margin-top: 8vw;
         font-size: 3vw;
     }
+}
